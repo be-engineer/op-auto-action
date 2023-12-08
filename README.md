@@ -139,6 +139,8 @@ CONFIG_TARGET_armsr_armv8_DEVICE_generic=y
 
 《[本地一键提取.config然后在云编译脚本使用](https://github.com/281677160/bendi)》
 
+编译完成后固件在openwrt/bin/target下面
+
 <br />
 </details>
 
