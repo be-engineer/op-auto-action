@@ -103,7 +103,7 @@ env:
 jobs:
   build:
     name: 启动"${{ matrix.target }}-${{ github.event.inputs.REPO_BRANCH }}"触发编译
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     if: ${{ github.event.repository.owner.id }} == ${{ github.event.sender.id }}
     
     env:
@@ -126,7 +126,7 @@ jobs:
         fi
     
     - name: 准备结束
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: 检测文件和对比上游版本
       run: |
